@@ -12,13 +12,13 @@ There are two ways to set up Kafka.
 - Run below command to use Kafka + zookeeper with docker container.
 
 ```bash
-sudo docker compose -f ./day-01/docker-kafka-zookeeper.yaml up -d
+sudo docker compose -f ./day-01/zookeeper-mode/docker-compose.yaml up -d
 ```
 
 - Run below command to stop docker container.
 
 ```bash
-sudo docker compose -f ./day-01/docker-kafka-zookeeper.yaml down
+sudo docker compose -f ./day-01/zookeeper-mode/docker-compose.yaml down -v
 ```
 
 ---
@@ -28,11 +28,11 @@ sudo docker compose -f ./day-01/docker-kafka-zookeeper.yaml down
 - Run below command to use Kafka + no zookeeper with docker.
 
 ```bash
-sudo docker compose -f ./day-01/docker-kafka-kraft.yaml up -d
+sudo docker compose -f ./day-01/kraft-mode/docker-compose.yaml up -d
 ```
 
 - Run below command to stop docker container.
 
 ```bash
-sudo docker compose -f ./day-01/docker-kafka-kraft.yaml down
+sudo docker compose -f ./day-01/kraft-mode/docker-compose.yaml down -v
 ```
